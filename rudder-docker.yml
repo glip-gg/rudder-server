@@ -14,10 +14,10 @@ services:
       resources:
         limits:
           cpus: "1"
-          memory: "4Gi"
+          memory: "4G"
         reservations:
           cpus: "0.5"
-          memory: "2Gi"
+          memory: "2G"
   backend:
     depends_on:
       - db
@@ -45,10 +45,10 @@ services:
       resources:
         limits:
           cpus: "2"
-          memory: "6Gi"
+          memory: "6G"
         reservations:
           cpus: "1"
-          memory: "3Gi"
+          memory: "3G"
     # Uncomment the following lines to mount workspaceConfig file
     # volumes:
     #   - <absolute_path_to_workspace_config>:<workspace_config_filepath_in_container> # Value for <workspace_config_filepath_in_container> should be same as the value provided for RSERVER_BACKEND_CONFIG_CONFIG_JSONPATH
@@ -65,10 +65,10 @@ services:
       resources:
         limits:
           cpus: "1"
-          memory: "2Gi"
+          memory: "2G"
         reservations:
           cpus: "0.5"
-          memory: "1Gi"
+          memory: "1G"
   # minio:
   #   image: minio/minio
   #   ports:
@@ -82,7 +82,7 @@ services:
       resources:
         limits:
           cpus: "0.5"
-          memory: "1Gi"
+          memory: "1G"
         reservations:
           cpus: "0.25"
-          memory: "512Mi"
+          memory: "512M"
